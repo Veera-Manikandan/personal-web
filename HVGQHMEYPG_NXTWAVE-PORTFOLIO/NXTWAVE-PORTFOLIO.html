@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio </title>
+    <link rel="stylesheet" href="port.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        heading: ['Playfair Display', 'serif'],
+                        body: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#c96a3b',
+                        primaryDark: '#a6542e',
+                        background: '#faf7f2',
+                    },
+                },
+            },
+            theme: {
+                extend: {
+                    colors: {
+                        bgDark: '#0b0f14',
+                        cardDark: '#121826',
+                        neon: '#19c8d8',
+                        neonPurple: '#a855f7'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <header>
+            <nav class="navbar">
+
+                <div class="logo">PORTFOLIO</div>
+
+
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#getintouch">Contact</a></li>
+                </ul>
+
+
+                <div class="nav-right">
+                    <button class="contact-btn"><a href="#getintouch">Get in Touch</a></button>
+                    <div class="hamburger" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <section class="home">
+                    <div class="home-container">
+
+
+                        <div class="home-content">
+                            <h3>Hello, I'm</h3>
+                            <h1>Veera Manikandan</h1>
+                            <h2>Aspiring Full Stack Developer</h2>
+
+                            <p>
+                                I design and build modern, responsive web applications using
+                                MERN Stack. Passionate about clean UI, smooth UX, and scalable systems.
+                            </p>
+
+                            <div class="home-buttons">
+                                <a href="#projects" class="btn primary">View Projects</a>
+                                <a href="#getintouch" class="btn secondary">Get in Touch</a>
+                            </div>
+                        </div>
+
+
+                        <div class="home-image">
+                            <img src="https://res.cloudinary.com/dpkuxu8mr/image/upload/v1767010992/Gemini_Generated_Image_983ua1983ua1983u_akq1i1.png" alt="Profile Image">
+                        </div>
+
+
+                    </div>
+
+                </section>
+                <div class="scroll-down">
+                    <span></span>
+                </div>
+
+            </section>
+
+            <section class="about-section" id="about">
+                <div class="about-container">
+
+                    <div>
+
+                        <h2 class="section-title">About Me</h2>
+
+                        <div class="about-card glass">
+                            <p class="typing-text">
+                                Hello! I'm <span class="highlight">Veera Manikandan</span>, a passionate developer who loves creating
+                                things that live on the internet.
+                            </p>
+
+                            <p>
+                                I specialize in building modern, scalable web applications with clean
+                                UI and delightful user experience.
+                            </p>
+
+                            <p>
+                                When I'm not coding, I explore new technologies, contribute to
+                                open-source, and keep learning.
+                            </p>
+                        </div>
+
+
+                        <div class="about-stats">
+                            <div class="stat glass">
+                                <h3 class="counter" data-target="5">0</h3>
+                                <p>Years Experience</p>
+                            </div>
+
+                            <div class="stat glass">
+                                <h3 class="counter" data-target="50">0</h3>
+                                <p>Projects Completed</p>
+                            </div>
+
+                            <div class="stat glass">
+                                <h3 class="counter" data-target="30">0</h3>
+                                <p>Happy Clients</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="about-features">
+                        <div class="feature glass cyan">
+                            <span>⚡</span>
+                            <h4>Clean Code</h4>
+                            <p>Maintainable, scalable and readable code.</p>
+                        </div>
+
+                        <div class="feature glass purple">
+                            <span>🎨</span>
+                            <h4>UI / UX Design</h4>
+                            <p>Pixel-perfect modern interfaces.</p>
+                        </div>
+
+                        <div class="feature glass yellow">
+                            <span>🚀</span>
+                            <h4>Performance</h4>
+                            <p>Fast, optimized and smooth experiences.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="skills-section" id="skills">
+                <div class="skills-container">
+
+
+                    <div class="skills-label">
+                        <span>—</span> SKILLS & SERVICES
+                    </div>
+
+                    <h2 class="skills-title">
+                        What I <span>bring</span> to the table
+                    </h2>
+
+
+                    <div class="skills-grid">
+
+
+                        <div>
+                            <h3 class="tech-title">Technical Proficiency</h3>
+
+                            <div class="skill">
+                                <div class="skill-header">
+                                    <span>React.js</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" data-progress="95"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill">
+                                <div class="skill-header">
+                                    <span>Javascript</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" data-progress="90"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill">
+                                <div class="skill-header">
+                                    <span>Node.js / Express</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" data-progress="90"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill">
+                                <div class="skill-header">
+                                    <span>HTML / CSS</span>
+                                    <span>98%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" data-progress="98"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill">
+                                <div class="skill-header">
+                                    <span>Database Design</span>
+                                    <span>92%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" data-progress="92"></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="services">
+                            <div class="service-card">
+                                <div class="icon">🎨</div>
+                                <div>
+                                    <h4>Web Design</h4>
+                                    <p>Creating intuitive, engaging interfaces that convert users.</p>
+                                </div>
+                            </div>
+
+                            <div class="service-card">
+                                <div class="icon">💻</div>
+                                <div>
+                                    <h4>Development</h4>
+                                    <p>Building scalable, high-performance applications.</p>
+                                </div>
+                            </div>
+
+                            <div class="service-card">
+                                <div class="icon">📱</div>
+                                <div>
+                                    <h4>Responsive Design</h4>
+                                    <p>Seamless experience across all devices.</p>
+                                </div>
+                            </div>
+
+                            <div class="service-card">
+                                <div class="icon">⚡</div>
+                                <div>
+                                    <h4>Performance</h4>
+                                    <p>Optimized speed for best user experience.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="projects-section" id="projects">
+                <div class="projects-container">
+
+
+                    <h2 class="section-title">Things I’ve Built</h2>
+
+                    <!-- PROJECT 1 -->
+                    <div class="project">
+                        <div class="project-image2">
+                            <span class="project-badge">⭐ Featured</span>
+                        </div>
+
+                        <div class="project-content">
+                            <span class="project-label">Featured Project</span>
+                            <a className="hide-anchor" href="https://gym-manage-vs.vercel.app">
+                                <h3 class="project-title">Gym Management Website</h3>
+                            </a>
+
+                            <div class="project-desc">
+                                A full-stack Gym Management System designed to streamline member registrations, subscription plans, trainer details, and gym operations through a responsive and user-friendly interface.
+                            </div>
+
+                            <div class="tech-stack">
+                                <span class="tech">HTML / CSS / JavaScript </span>
+                                <span class="tech">Node.js / Express.js</span>
+                                <span class="tech">SQLITE</span>
+                                <span class="tech">Responsive Design (Mobile-First)</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="https://github.com/Veera-Manikandan/gym_management"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="imagee-icon" /></a>
+                                <a href="https://github.com/Veera-Manikandan/gym_management">↗</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PROJECT 2 -->
+                    <div class="project reverse">
+                        <div class="project-content">
+                            <span class="project-label">Featured Project</span>
+                            <a className="hide-anchor" href="https://responvsac.ccbp.tech">
+                                <h3 class="project-title">Speedx-Spaces</h3>
+                            </a>
+
+                            <div class="project-desc">
+                                A visually crafting environments that elevate everyday living showcase website focusing on user engagement and seamless browsing experience.
+                            </div>
+
+                            <div class="tech-stack">
+                                <span class="tech">HTML / CSS / JavaScript </span>
+                                <span class="tech">BOOTSTRAP </span>
+                                <span class="tech">Responsive Design (Mobile-First)</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="https://responvsac.ccbp.tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="imagee-icon" /></a>
+                                <a href="https://responvsac.ccbp.tech">↗</a>
+                            </div>
+                        </div>
+
+                        <div class="project-image">
+                            <span class="project-badge">⭐ Featured</span>
+                        </div>
+                    </div>
+
+                    <!-- PROJECT 3 -->
+                    <div class="project">
+                        <div class="project-image3">
+                            <span class="project-badge">⭐ Featured</span>
+                        </div>
+
+                        <div class="project-content">
+                            <span class="project-label">Featured Project</span>
+                            <a className="hide-anchor" href="https://dsuset.ccbp.tech">
+                                <h3 class="project-title">Engineering College Website</h3>
+                            </a>
+
+                            <div class="project-desc">
+                                A fully responsive academic website developed to showcase institutional information, departments, admissions, and student resources.
+                            </div>
+
+                            <div class="tech-stack">
+                                <span class="tech">HTML / CSS / JavaScript </span>
+                                <span class="tech">BOOTSTRAP </span>
+                                <span class="tech">Responsive Design (Mobile-First)</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="https://dsuset.ccbp.tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="imagee-icon" /></a>
+                                <a href="https://dsuset.ccbp.tech">↗</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PROJECT 4 -->
+                    <div class="project reverse">
+                        <div class="project-content">
+                            <span class="project-label">Featured Project</span>
+                            <a href="http://todoyellow.ccbp.tech">
+                                <h3 class="project-title">Todo Management Application</h3>
+                            </a>
+
+                            <div class="project-desc">
+                                A productivity-focused Todo application that helps users efficiently manage daily tasks with real-time updates and clean UI interactions.
+                            </div>
+
+                            <div class="tech-stack">
+                                <span class="tech">HTML / CSS / JavaScript </span>
+                                <span class="tech">BOOTSTRAP </span>
+                                <span class="tech">Responsive Design (Mobile-First)</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="http://todoyellow.ccbp.tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="imagee-icon" /></a>
+                                <a href="http://todoyellow.ccbp.tech">↗</a>
+                            </div>
+                        </div>
+
+                        <div class="project-image4">
+                            <span class="project-badge">⭐ Featured</span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+
+            <div class="bg-background font-body text-gray-800">
+
+                <section id="getintouch" class="max-w-7xl mx-auto px-6 py-20">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+
+                        <!-- Left Content -->
+                        <div>
+                            <p class="text-primary font-semibold tracking-widest text-sm mb-4">GET IN TOUCH</p>
+                            <h1 class="font-heading text-4xl md:text-5xl font-bold mb-10">
+                                Let's work <span class="text-primary">together</span>
+                            </h1>
+
+                            <div class="space-y-6">
+                                <div>
+                                    <p class="text-sm text-gray-500">Email</p>
+                                    <p class="font-medium">versonals56@gmail.com</p>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-500">Location</p>
+                                    <p class="font-medium">Pudukkottai</p>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-500">Response Time</p>
+                                    <p class="font-medium">Within 24 hours</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Form -->
+                        <div>
+                            <form class="space-y-6" onsubmit="handleSubmit(event)">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                    <div>
+                                        <label id="name" class="text-sm  font-medium">Name</label>
+                                        <input type="text" placeholder="Your name" class="mt-2 w-full rounded-xl border border-gray-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary" />
+                                    </div>
+                                    <div>
+                                        <label id="email" class="text-sm font-medium">Email</label>
+                                        <input type="email" placeholder="your@email.com" class="mt-2 w-full rounded-xl border border-gray-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary" />
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label id="subject" class="text-sm font-medium">Subject</label>
+                                    <input type="text" placeholder="Project inquiry" class="mt-2 w-full rounded-xl border border-gray-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary" />
+                                </div>
+
+                                <div>
+                                    <label id="message" class="text-sm font-medium">Message</label>
+                                    <textarea rows="5" placeholder="Tell me about your project..." class="mt-2 w-full rounded-xl border border-gray-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                                </div>
+
+                                <button tyep="submit" class="w-full rounded-xl bg-gradient-to-r from-primary to-background bg-red-800 text-white font-semibold py-4 hover:shadow-lg hover:-translate-y-0.5 transition">
+                                    Send Message →
+                                </button>
+                                <h1 id="success"></h1>
+                            </form>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div class="bg-bgDark text-gray-300 font-sans">
+                <footer class="border-t border-gray-800 mt-32">
+                    <div class="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-3 gap-12">
+
+                        <!-- Brand -->
+                        <div>
+                            <h2 class="text-2xl font-bold text-neon">Portfolio</h2>
+                            <p class="mt-4 text-sm text-gray-400">Building digital experiences</p>
+                        </div>
+
+                        <!-- Social Icons -->
+                        <div class="flex md:justify-center gap-4">
+                            <a href="https://www.linkedin.com/in/veera-manikandan007/" class="w-11 h-11 flex items-center justify-center rounded-xl bg-cardDark hover:bg-neon/20 transition"><img src="https://res.cloudinary.com/dpkuxu8mr/image/upload/v1729182842/61f3fe1a40dc31c249e1ab99_linkedin-icon_zfu1yh.svg" /></a>
+                            <a href="https://github.com/Veera-Manikandan/gym_management" class="w-11 h-11 flex items-center justify-center rounded-xl bg-cardDark hover:bg-neon/20 transition"><img src="https://res.cloudinary.com/dpkuxu8mr/image/upload/v1729095282/flame-logo_whkvkg.svg" /></a>
+                            <a href="https://www.linkedin.com/in/veera-manikandan007/" class="w-11 h-11 flex items-center justify-center rounded-xl bg-cardDark hover:bg-neon/20 transition"><img src="https://res.cloudinary.com/dpkuxu8mr/image/upload/v1729182809/61f400cc41af69932df92c8a_twitterimage_qpul56.svg" /></a>
+
+
+                        </div>
+
+                        <!-- Footer Text -->
+                        <div class="md:text-right">
+                            <p class="text-sm">Built with <span class="text-red-500">❤</span> by <span class="text-neon">Veera Manikandan</span></p>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-gray-800">
+                        <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between text-sm text-gray-500 gap-4">
+                            <span>© 2024 All rights reserved.</span>
+                            <div class="flex gap-6">
+                                <a href="#" class="hover:text-neon">Privacy</a>
+                                <a href="#" class="hover:text-neon">Terms</a>
+                                <a href="#" class="hover:text-neon">Sitemap</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </footer>
+            </div>
+        </footer>
+    </div>
+    <script src="port.js">
+
+
+    </script>
+</body>
+
+</html>
